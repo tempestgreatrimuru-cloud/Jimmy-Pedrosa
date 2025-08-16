@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jimmy Pedrosa Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #c7d8f6, #4b6cb7);
+        color: #2f3640;
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        text-align: center;
+        padding: 50px 20px;
+        background: rgba(62, 96, 191, 0.85);
+        color: white;
+    }
+
+    header img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin-top: 20px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+        margin-top: 20px;
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+        margin-top: 5px;
+        font-weight: 300;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 25px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        color: #192a56;
+        margin-bottom: 15px;
+        font-weight: 600;
+        border-bottom: 2px solid #273c75;
+        padding-bottom: 5px;
+    }
+
+    .about-me p {
+        margin-bottom: 15px;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .stat {
+        background: #e1ecf4;
+        border-radius: 10px;
+        padding: 20px 25px;
+        margin: 10px;
+        flex: 1 1 150px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+    }
+
+    .stat:hover {
+        transform: translateY(-5px);
+    }
+
+    .stat h3 {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+        color: #273c75;
+    }
+
+    .stat p {
+        font-weight: 500;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .skill {
+        background: #e1ecf4;
+        border: 1px solid #d0dde8;
+        border-radius: 50px;
+        padding: 10px 20px;
+        font-size: 0.9em;
+        cursor: default;
+        transition: transform 0.2s;
+    }
+
+    .skill:hover {
+        transform: scale(1.05);
+    }
+
+    .quote {
+        font-style: italic;
+        background: #ffeaa7;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px 15px;
+        border-radius: 8px;
+        border: 1px solid #d0dde8;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .contact-form button {
+        padding: 12px 20px;
+        border: none;
+        border-radius: 8px;
+        background: #273c75;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+        background: #40739e;
+    }
+
+    .contacts {
+        margin-top: 15px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .contacts a {
+        padding: 10px 15px;
+        background: #273c75;
+        color: white;
+        border-radius: 6px;
+        transition: background 0.3s;
+    }
+
+    .contacts a:hover {
+        background: #40739e;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 30px;
+        color: white;
+    }
+
+    @media (max-width: 600px) {
+        header img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .stats {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .skill {
+            flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="profile.jpeg" alt="Profile Picture">
+    <h1>Jimmy B. Pedrosa Jr.</h1>
+    <p>BSIT Student / Aspiring Developer</p>
+</header>
+
+<section class="about-me">
+    <h2>About Me</h2>
+    <p>I am a BSIT student at Davao del Sur State College. BSIT is not my first choice, but I am eager to learn more about technology and create software applications that can make people's lives easier.</p>
+    <p>I am also an introvert, so IT is beneficial for me because I can work from home and focus on coding without too much interaction.</p>
+</section>
+
+<section class="stats">
+    <div class="stat">
+        <h3>1</h3>
+        <p>Project</p>
+    </div>
+    <div class="stat">
+        <h3>3+</h3>
+        <p>Years Learning IT</p>
+    </div>
+    <div class="stat">
+        <h3>5+</h3>
+        <p>Technologies Known</p>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">MySQL Workbench</div>
+        <div class="skill">Programming</div>
+    </div>
+</section>
+
+<section>
+    <h2>Favorite Quote</h2>
+    <div class="quote">
+        "Consistency and discipline are the keys to success in life."
+    </div>
+</section>
+
+<section>
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="contacts">
+        <a href="https://facebook.com/" target="_blank">Facebook</a>
+        <a href="mailto:your.tempestgreatrimuru@gmail.com">Email</a>
+    </div>
+</section>
+
+<footer>
+    © 2025 Jimmy B. Pedrosa Jr. All rights reserved.
+</footer>
+
+</body>
+</html>
